@@ -48,6 +48,6 @@ jobs:
 
     - name: Tag and Push Docker image
       run: |
-        IMAGE_NAME=ghcr.io/${{ github.repository }}/protobuf-docker
+        IMAGE_NAME=ghcr.io/leedigitalworks/protobuf-docker
         docker tag protobuf-docker:latest $IMAGE_NAME:${{ env.IMAGE_TAG }}
         docker push $IMAGE_NAME:${{ env.IMAGE_TAG }}
